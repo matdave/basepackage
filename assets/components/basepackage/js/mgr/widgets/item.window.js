@@ -62,6 +62,7 @@ Ext.extend(basepackage.window.Item, MODx.Window, {
             },
             {
                 xtype: "modx-combo-browser",
+                boxLabel: _("basepackage.item.photo"),
                 source: MODx.config.default_media_source,
                 hideSourceCombo: true,
                 name: "photo",

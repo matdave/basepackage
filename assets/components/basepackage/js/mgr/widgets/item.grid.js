@@ -189,7 +189,7 @@ Ext.extend(basepackage.grid.Item, MODx.grid.Grid, {
         MODx.msg.confirm({
             title: _("basepackage.item.remove"),
             text: _("basepackage.item.remove_confirm", {
-                name: this.menu.record.name,
+                title: this.menu.record.title,
             }),
             url: this.config.url,
             params: {
@@ -215,7 +215,7 @@ Ext.extend(basepackage.grid.Item, MODx.grid.Grid, {
         MODx.msg.confirm({
             title: _("basepackage.item.duplicate"),
             text: _("basepackage.item.duplicate_confirm", {
-                name: this.menu.record.name,
+                title: this.menu.record.title,
             }),
             url: this.config.url,
             params: {
