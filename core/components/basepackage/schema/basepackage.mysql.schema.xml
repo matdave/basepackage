@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model package="BasePackage\Model\" baseClass="xPDO\Om\xPDOSimpleObject" platform="mysql" defaultEngine="InnoDB" version="3.0">
-
+    <object class="Item" table="bp_item">
+        <field key="title" dbtype="varchar" precision="191" phptype="string" null="false" default="" index="fulltext" />
+        <field key="description" dbtype="text" phptype="string" null="false" default="" index="fulltext" />
+        <field key="featured" dbtype="tinyint" precision="1" phptype="boolean" null="false" default="0" />
+        <field key="start_date" dbtype="datetime" phptype="datetime" null="false" default="0" />
+        <field key="photo" dbtype="text" phptype="string" null="false" default="" />
+        <index alias="item_content" name="item_content" primary="false" unique="false" type="FULLTEXT">
+            <column key="title" length="" collation="A" null="false" />
+            <column key="description" length="" collation="A" null="false" />
+        </index>
+        <index alias="start_date" name="start_date" primary="false" unique="false" type="BTREE">
+            <column key="start_date" length="" collation="A" null="false" />
+        </index>
+        <index alias="featured" name="featured" primary="false" unique="false" type="BTREE">
+            <column key="featured" length="" collation="A" null="false" />
+        </index>
+    </object>
 </model>

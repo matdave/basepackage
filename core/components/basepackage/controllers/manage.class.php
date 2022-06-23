@@ -15,8 +15,11 @@ class BasePackageManageManagerController extends BasePackageBaseManagerControlle
 
     public function loadCustomCssJs(): void
     {
+        $this->addTinyRTE();
         $this->addLastJavascript($this->basepackage->getOption('jsUrl') . 'mgr/widgets/manage.panel.js');
         $this->addLastJavascript($this->basepackage->getOption('jsUrl') . 'mgr/sections/manage.js');
+        $this->addLastJavascript($this->basepackage->getOption('jsUrl') . 'mgr/sections/item.window.js');
+        $this->addLastJavascript($this->basepackage->getOption('jsUrl') . 'mgr/sections/item.grid.js');
 
         $this->addHtml(
             '
