@@ -1,13 +1,14 @@
 name: BasePackage
-version: 0.0.1
+version: 0.0.2
 lowCaseName: basepackage
 namespace: BasePackage
-description: 'This is a base pacakge for MODX 3'
+description: This is a base package for MODX 3
 author: matdave
+
 menus:
-    -
-        text: basepackage.menu
-        action: manage
+    - text: basepackage.menu
+      action: manage
+
 database:
     tables:
         - BasePackage\Model\Item
