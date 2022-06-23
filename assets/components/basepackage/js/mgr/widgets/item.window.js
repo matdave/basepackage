@@ -54,7 +54,7 @@ Ext.extend(basepackage.window.Item, MODx.Window, {
             },
             {
                 xtype: "xdatetime",
-                boxLabel: _("basepackage.item.start_date"),
+                fieldLabel: _("basepackage.item.start_date"),
                 hideLabel: true,
                 name: "start_date",
                 anchor: "100%",
@@ -62,7 +62,7 @@ Ext.extend(basepackage.window.Item, MODx.Window, {
             },
             {
                 xtype: "modx-combo-browser",
-                boxLabel: _("basepackage.item.photo"),
+                fieldLabel: _("basepackage.item.photo"),
                 source: MODx.config.default_media_source,
                 hideSourceCombo: true,
                 name: "photo",

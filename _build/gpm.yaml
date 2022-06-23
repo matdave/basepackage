@@ -8,3 +8,6 @@ menus:
     -
         text: basepackage.menu
         action: manage
+database:
+    tables:
+        - BasePackage\Model\Item
