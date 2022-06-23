@@ -1,0 +1,10 @@
+name: BasePackage
+version: 0.0.1
+lowCaseName: basepackage
+namespace: BasePackage
+description: 'This is a base pacakge for MODX 3'
+author: matdave
+menus:
+    -
+        text: .menu
+        action: manage
