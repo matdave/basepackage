@@ -5,7 +5,7 @@ basepackage.grid.Item = function (config) {
         url: MODx.config.connector_url,
         baseParams: {
             action: "BasePackage\\Processors\\Item\\GetList",
-            sort: "pattern",
+            sort: "start_date",
         },
         autosave: true,
         save_action: "BasePackage\\Processors\\Item\\UpdateFromGrid",
