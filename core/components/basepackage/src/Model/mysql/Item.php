@@ -19,7 +19,7 @@ class Item extends \BasePackage\Model\Item
             'title' => '',
             'description' => '',
             'featured' => 0,
-            'start_date' => '0',
+            'start_date' => NULL,
             'photo' => '',
         ),
         'fieldMeta' => 
@@ -53,8 +53,7 @@ class Item extends \BasePackage\Model\Item
             array (
                 'dbtype' => 'datetime',
                 'phptype' => 'datetime',
-                'null' => false,
-                'default' => '0',
+                'null' => true,
             ),
             'photo' => 
             array (
@@ -100,7 +99,7 @@ class Item extends \BasePackage\Model\Item
                     array (
                         'length' => '',
                         'collation' => 'A',
-                        'null' => false,
+                        'null' => true,
                     ),
                 ),
             ),
