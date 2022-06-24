@@ -4,14 +4,14 @@
         <field key="title" dbtype="varchar" precision="191" phptype="string" null="false" default="" index="fulltext" />
         <field key="description" dbtype="text" phptype="string" null="false" default="" index="fulltext" />
         <field key="featured" dbtype="tinyint" precision="1" phptype="boolean" null="false" default="0" />
-        <field key="start_date" dbtype="datetime" phptype="datetime" null="false" default="0" />
+        <field key="start_date" dbtype="datetime" phptype="datetime" null="true" />
         <field key="photo" dbtype="text" phptype="string" null="false" default="" />
         <index alias="item_content" name="item_content" primary="false" unique="false" type="FULLTEXT">
             <column key="title" length="" collation="A" null="false" />
             <column key="description" length="" collation="A" null="false" />
         </index>
         <index alias="start_date" name="start_date" primary="false" unique="false" type="BTREE">
-            <column key="start_date" length="" collation="A" null="false" />
+            <column key="start_date" length="" collation="A" null="true" />
         </index>
         <index alias="featured" name="featured" primary="false" unique="false" type="BTREE">
             <column key="featured" length="" collation="A" null="false" />

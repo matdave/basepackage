@@ -13,6 +13,6 @@ $modx->services->add('basepackage', function($c) use ($modx) {
 });
 
 // Load packages model, uncomment if you have DB tables
-//$modx->addPackage('BasePackage\Model', $namespace['path'] . 'src/', null, 'BasePackage\\');
+$modx->addPackage('BasePackage\Model', $namespace['path'] . 'src/', null, 'BasePackage\\');
 
 // More about this file: https://docs.modx.com/3.x/en/extending-modx/namespaces#bootstrapping-services
